@@ -6,3 +6,4 @@ git push
 echo.
 echo Selesai! Website di GitHub Pages sedang diperbarui otomatis.
 pause
+
