@@ -1,0 +1,11 @@
+{
+  "name": "skyr-menu",
+  "version": "1.0.0",
+  "description": "Menu digital SKYR — Pure HTML, CSS, JS + SQLite",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

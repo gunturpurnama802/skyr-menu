@@ -1,0 +1,215 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "m1",
+      "name": "Americano",
+      "category": "Coffee",
+      "kategoris": [
+        {
+          "id": "k1",
+          "nama": "Coffee",
+          "slug": "coffee"
+        }
+      ],
+      "kategoriIds": [
+        "k1"
+      ],
+      "description": "Espresso dengan air panas. Bold & clean.",
+      "longDescription": null,
+      "price": 18000,
+      "image": null
+    },
+    {
+      "id": "m8",
+      "name": "French Fries",
+      "category": "Snack",
+      "kategoris": [
+        {
+          "id": "k3",
+          "nama": "Snack",
+          "slug": "snack"
+        }
+      ],
+      "kategoriIds": [
+        "k3"
+      ],
+      "description": "Kentang goreng gurih renyah dengan bumbu spesial.",
+      "longDescription": null,
+      "price": 18000,
+      "image": null
+    },
+    {
+      "id": "m5",
+      "name": "Matcha Latte",
+      "category": "Non-Coffee",
+      "kategoris": [
+        {
+          "id": "k2",
+          "nama": "Non-Coffee",
+          "slug": "non-coffee"
+        }
+      ],
+      "kategoriIds": [
+        "k2"
+      ],
+      "description": "Matcha premium pilihan dengan susu segar.",
+      "longDescription": null,
+      "price": 25000,
+      "image": null
+    },
+    {
+      "id": "m2",
+      "name": "Caffe Latte",
+      "category": "Coffee",
+      "kategoris": [
+        {
+          "id": "k1",
+          "nama": "Coffee",
+          "slug": "coffee"
+        }
+      ],
+      "kategoriIds": [
+        "k1"
+      ],
+      "description": "Espresso dengan susu steamed. Creamy & smooth.",
+      "longDescription": null,
+      "price": 22000,
+      "image": null
+    },
+    {
+      "id": "m6",
+      "name": "Chocolate",
+      "category": "Non-Coffee",
+      "kategoris": [
+        {
+          "id": "k2",
+          "nama": "Non-Coffee",
+          "slug": "non-coffee"
+        }
+      ],
+      "kategoriIds": [
+        "k2"
+      ],
+      "description": "Cokelat pekat premium yang rich dan creamy.",
+      "longDescription": null,
+      "price": 23000,
+      "image": null
+    },
+    {
+      "id": "m9",
+      "name": "Roti Bakar",
+      "category": "Snack",
+      "kategoris": [
+        {
+          "id": "k3",
+          "nama": "Snack",
+          "slug": "snack"
+        }
+      ],
+      "kategoriIds": [
+        "k3"
+      ],
+      "description": "Roti bakar krispi dengan selai dan cokelat/keju.",
+      "longDescription": null,
+      "price": 15000,
+      "image": null
+    },
+    {
+      "id": "m3",
+      "name": "Cappuccino",
+      "category": "Coffee",
+      "kategoris": [
+        {
+          "id": "k1",
+          "nama": "Coffee",
+          "slug": "coffee"
+        }
+      ],
+      "kategoriIds": [
+        "k1"
+      ],
+      "description": "Espresso, susu steamed, dan foam tebal klasik.",
+      "longDescription": null,
+      "price": 22000,
+      "image": null
+    },
+    {
+      "id": "m7",
+      "name": "Lemon Tea",
+      "category": "Non-Coffee",
+      "kategoris": [
+        {
+          "id": "k2",
+          "nama": "Non-Coffee",
+          "slug": "non-coffee"
+        }
+      ],
+      "kategoriIds": [
+        "k2"
+      ],
+      "description": "Teh segar berpadu perasan lemon asli.",
+      "longDescription": null,
+      "price": 15000,
+      "image": null
+    },
+    {
+      "id": "m10",
+      "name": "Pisang Goreng Keju",
+      "category": "Snack",
+      "kategoris": [
+        {
+          "id": "k3",
+          "nama": "Snack",
+          "slug": "snack"
+        }
+      ],
+      "kategoriIds": [
+        "k3"
+      ],
+      "description": "Pisang goreng manis dengan limpahan keju leleh.",
+      "longDescription": null,
+      "price": 16000,
+      "image": null
+    },
+    {
+      "id": "m4",
+      "name": "Es Kopi Susu Gula Aren",
+      "category": "Coffee",
+      "kategoris": [
+        {
+          "id": "k1",
+          "nama": "Coffee",
+          "slug": "coffee"
+        }
+      ],
+      "kategoriIds": [
+        "k1"
+      ],
+      "description": "Kopi susu manis dengan gula aren asli SKYR. Favorit!",
+      "longDescription": null,
+      "price": 23000,
+      "image": null
+    }
+  ],
+  "kategori": [
+    {
+      "id": "k1",
+      "nama": "Coffee",
+      "slug": "coffee",
+      "urutan": 1
+    },
+    {
+      "id": "k2",
+      "nama": "Non-Coffee",
+      "slug": "non-coffee",
+      "urutan": 2
+    },
+    {
+      "id": "k3",
+      "nama": "Snack",
+      "slug": "snack",
+      "urutan": 3
+    }
+  ]
+}

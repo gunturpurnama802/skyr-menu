@@ -1,0 +1,208 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #1f2937;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Welcome — smooth, slow, elegant */
+@keyframes welcomeIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+@keyframes welcomeOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+.welcome-enter {
+  animation: welcomeIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.welcome-exit {
+  animation: welcomeOut 0.58s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  pointer-events: none;
+}
+
+/* SKYR wavy loop */
+@keyframes skyrMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-skyr-marquee {
+  animation: skyrMarquee 9s linear infinite;
+}
+
+/* Welcome in — smooth & cinematic */
+@keyframes welcomeSnakeIn {
+  from {
+    transform: translateX(-14%) rotate(-12deg) scale(0.96);
+    opacity: 0;
+    filter: blur(6px);
+  }
+  to {
+    transform: translateX(-6%) rotate(-14deg) scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+@keyframes welcomeTitleIn {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) scale(0.9);
+    filter: blur(12px);
+    letter-spacing: 0.32em;
+  }
+  55% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+    letter-spacing: 0.18em;
+  }
+}
+@keyframes welcomeSubIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(6px);
+    letter-spacing: 0.32em;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    letter-spacing: 0.22em;
+  }
+}
+@keyframes welcomeBtnIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+    filter: blur(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+@keyframes welcomeBtnFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+    box-shadow:
+      0 8px 0 rgba(0, 0, 0, 0.16),
+      0 14px 28px rgba(0, 0, 0, 0.14);
+  }
+  50% {
+    transform: translateY(-3px);
+    box-shadow:
+      0 10px 0 rgba(0, 0, 0, 0.16),
+      0 18px 34px rgba(0, 0, 0, 0.18);
+  }
+}
+@keyframes welcomeBgFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-10px, -8px) scale(1.02);
+    opacity: 0.95;
+  }
+}
+@keyframes welcomeGlow {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(1.06);
+  }
+}
+.animate-welcome-snake {
+  animation: welcomeSnakeIn 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+}
+.animate-welcome-bg {
+  animation: welcomeBgFloat 14s ease-in-out infinite;
+}
+.animate-welcome-glow {
+  animation: welcomeGlow 4.5s ease-in-out infinite;
+}
+.animate-welcome-title {
+  animation: welcomeTitleIn 1.25s cubic-bezier(0.16, 1, 0.3, 1) 0.35s both;
+}
+.animate-welcome-sub {
+  animation: welcomeSubIn 1.0s cubic-bezier(0.16, 1, 0.3, 1) 0.75s both;
+}
+.animate-welcome-btn {
+  animation:
+    welcomeBtnIn 1.05s cubic-bezier(0.16, 1, 0.3, 1) 0.95s both,
+    welcomeBtnFloat 3.8s ease-in-out 2.1s infinite;
+}
+
+/* Image skeleton shimmer */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Menu name running text — infinit saat overflow */
+@keyframes menuMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
